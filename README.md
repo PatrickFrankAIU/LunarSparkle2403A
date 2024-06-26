@@ -3,9 +3,6 @@
 Project for ITWEB 200 students, Term 2403A (Summer 2024)
 
 Participants: 
-- Penny Johnston
-- Sharon Reed
-- Aidan Murphy
 
 This site is hosted on GitHub Pages. 
 [Live Site Link](https://patrickfrankaiu.github.io/GradeManagerProject/)
