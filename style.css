@@ -31,6 +31,7 @@ p{
     font-size: 16px;
     font-family: helvetica, arial, sans-serif;
     color: #7c9bc3;
+    text-align: center;
 }
 img {
     max-width: 250px;
@@ -120,3 +121,35 @@ figcaption{
     display: block;
     
 }
+        
+
+.cta-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;}
+.cta-image {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.cta-message {
+    font-size: 10px;
+    color: #0d0d0d;
+    margin-bottom: 20px;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+.cta-button:hover {
+    background-color: #45a049;
+    
+}    
