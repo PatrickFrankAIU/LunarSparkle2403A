@@ -4,7 +4,7 @@ body {
     border-radius: 30px;
     margin: 0 10px;
 }
-.titleClass {
+h1{
     font-size: 32px;
     font-family: helvetica, arial, sans-serif;
     color: #eba646;
@@ -50,13 +50,15 @@ figcaption {
 
 header {
     background-color: #f3f4f6;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 80;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 nav ul li {
@@ -68,12 +70,15 @@ nav ul li a {
     text-decoration: none;
     color: #333;
 }
+nav ul li a#current{
+    color: white;
+}
 
 footer {
     background-color: #f3f4f6;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    margin: 30px;
     bottom: 0;
     width: 100%;
 }
@@ -93,7 +98,7 @@ img.team {
 }
 
 .pageLinks{
-    background-color:#7c9bc3;
+    background-color:#0f73f6;
     height: 100%;
     padding: 5px 0 5px 0;
     border-radius: 5px;
@@ -121,4 +126,9 @@ img.team {
 }
 p em{
     color: aqua;
+}
+figcaption{
+    color:white;
+    display: block;
+    
 }
