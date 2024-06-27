@@ -5,7 +5,7 @@ body {
     margin: 0 10px;
 }
 h1{
-    font-size: 32px;
+    font-size: 50px;
     font-family: helvetica, arial, sans-serif;
     color: #feebd1;
     background-color: #000a20;
@@ -48,13 +48,15 @@ figcaption {
 
 header {
     background-color: #f3f4f6;
-    padding: 20px;
+    padding: 50px;
     text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 50;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 nav ul li {
@@ -66,7 +68,9 @@ nav ul li a {
     text-decoration: none;
     color: #333;
 }
-
+nav ul li a#current{
+    color: lightcoral;
+}
 footer {
     background-color: #f3f4f6;
     text-align: center;
