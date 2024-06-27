@@ -5,12 +5,14 @@ body {
     margin: 0 10px;
 }
 h1{
-    font-size: 50px;
+    font-size: 32px;
     font-family: helvetica, arial, sans-serif;
-    color: #feebd1;
-    background-color: #000a20;
+    color: #eba646;
+    background-color: #458288;
     text-align: center;
     padding: 5px 0 5px 0;
+    border-radius: 30px;
+    
 }
 h2{
     font-size: 26px;
@@ -108,8 +110,17 @@ img.team {
     flex: 1 1 300px;
     box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 10px;
+    border: 1px solid #072854;
+    border-radius: 5px;
+    padding: 20px;
 }
 .productCard p{
     font-weight: bold;
 }
 
+figcaption{
+    color:white;
+    display: block;
+    
+}
