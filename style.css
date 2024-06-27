@@ -114,4 +114,11 @@ img.team {
 .productCard p{
     font-weight: bold;
 }
-
+.staff-image{
+    width: 100px;
+    margin-top: 10px;
+    float: left;
+}
+p em{
+    color: aqua;
+}
