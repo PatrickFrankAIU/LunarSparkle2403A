@@ -172,4 +172,17 @@ figcaption{
 .cta-button:hover {
     background-color: #45a049;
     
-}    
+}
+.blog-entry{
+    font-size: 20px;
+    font-family: helvetica, arial, sans-serif;
+    color: #feebd1;
+    text-align: left;
+    text-decoration: underline;
+}
+.blog-p{
+text-align: left;
+}
+.blog-i{
+    float: left;
+}
