@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Locate Yourself</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1 class="titleClass">Welcome to Lunar Sparkle Jewelry</h1>
+        <nav class="pageLinks">
+            <ul>
+                <li class="navigation"><a href="index.html">Home</a></li>
+                <li class="navigation"><a href="about.html">About Us</a></li>
+                <li class="navigation"><a href="products.html">Products</a></li>
+                <li class="navigation"><a href="blog.html">Company Blog</a></li>
+                <li class="navigation"><a href="locations.html" id="current">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Find My Location</h1>
+    <button onclick="getLocation()">Locate Me</button>
+    <p id="location"></p>
+    <a id="mapLink" href="#" target="_blank">View Location on OpenStreetMap</a>
+    </main>
+    <footer>
+        <div>
+            <p>Find us on social Media: <a href="https://www.facebook.com/" target="_blank">Facebook</a>, <a href="https://www.instagram.com/" target="_blank">Instagram</a>, <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <div class="social-container">
+                <a href="https://www.facebook.com/" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook Logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="social" src="images/instagram.avif" alt="Instagram Logo"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img class="social" src="images/twitter.webp" alt="Twitter Logo">
+                </a>
+            </div>
+        </div>
+        <div class="copyright-caption">
+            <p>&copy; 2024 Lunar Sparkle Jewelry</p>
+        </div>
+    </footer>
+</body>
+<script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            document.getElementById("location").innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        const location = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+
+        document.getElementById("location").innerHTML = location;
+        document.getElementById("mapLink").href = `https://www.openstreetmap.org/?mlat=${latitude}&mlon=${longitude}&zoom=15`;
+    }
+
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                document.getElementById("location").innerHTML = "User denied the request for Geolocation.";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                document.getElementById("location").innerHTML = "Location information is unavailable.";
+                break;
+            case error.TIMEOUT:
+                document.getElementById("location").innerHTML = "The request to get user location timed out.";
+                break;
+            case error.UNKNOWN_ERROR:
+                document.getElementById("location").innerHTML = "An unknown error occurred.";
+                break;
+        }
+    }
+</script>
+</html>
