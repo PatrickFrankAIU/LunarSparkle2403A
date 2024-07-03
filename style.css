@@ -21,6 +21,13 @@ h2{
     text-align: center;
     border-radius: 30px;
     text-decoration: underline;
+    
+    .blog{
+        text-align: center;
+    }
+    .blogp{
+        margin-left: 50;
+    }
 }
 h3{
     font-size: 20px;
@@ -120,6 +127,14 @@ img.team {
 .productCard p{
     font-weight: bold;
 }
+.staff-image{
+    width: 100px;
+    margin-top: 10px;
+    float: left;
+}
+p em{
+    color: aqua;
+}
 
 figcaption{
     color:white;
@@ -157,4 +172,17 @@ figcaption{
 .cta-button:hover {
     background-color: #45a049;
     
-}    
+}
+.blog-entry{
+    font-size: 20px;
+    font-family: helvetica, arial, sans-serif;
+    color: #feebd1;
+    text-align: left;
+    text-decoration: underline;
+}
+.blog-p{
+text-align: left;
+}
+.blog-i{
+    float: left;
+}
